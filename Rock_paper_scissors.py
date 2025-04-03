@@ -52,7 +52,7 @@ while choice:
 
             if user_val in valid_values:
                 if value == user_val:
-                    final += [str(i)+':-' + 'Tie']
+                    final += [str(i)+':' + 'Tie']
                     tie += 1
                     print(msg)
                     print("        it's a tie")
@@ -101,6 +101,7 @@ while choice:
         # answer_val = [computer,user,tie]
         # print(answers[answer_val.index(max(answer_val))])
         if cond:
+            final = print('[',", ".join(final),']')
             print('''
         The final list of wins:''')
             print((f'''{final}'''))
