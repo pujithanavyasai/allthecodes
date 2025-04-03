@@ -11,7 +11,8 @@ while choice:
             print('''
                     Game Exited
                 ''')
-        else: print('''
+        else: 
+            print('''
                     Invalid choice please choose again, run the program again
                     ''')
     else:
