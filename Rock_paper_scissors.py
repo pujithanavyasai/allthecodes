@@ -7,6 +7,7 @@ computer = 0
 user = 0
 tie = 0
 for i in range(1,times+1):
+    cond = True
     value =c(valid_values)
     user_val = input("Enter your value( rock , paper, scissor ):- ").lower()
     msg = 'user:-' + user_val + ' vs ' + 'computer:-' + value
@@ -49,20 +50,22 @@ for i in range(1,times+1):
                 Invalid Input!!
               DISQUALIFIED! Restart the game 
             ''')
+        cond = False
         break
 # answer_val = [computer,user,tie]
 # print(answers[answer_val.index(max(answer_val))])
-print()
-print("The final list of wins:")
-print(final)
-if computer > user :
-    winner = 'computer'
-    print('winner is '+ winner + '!!')
-    print('Better luck next time')
-elif user > computer :
-    winner = 'user'
-    print('winner is '+ winner + '!!')  
-    print('Congratulations!!')
-elif user == computer:
-    print("None of you is a winner, it's a tie!")
-    print('Better luck next time')
+if cond:
+    print()
+    print("The final list of wins:")
+    print(final)
+    if computer > user :
+        winner = 'computer'
+        print('winner is '+ winner + '!!')
+        print('Better luck next time')
+    elif user > computer :
+        winner = 'user'
+        print('winner is '+ winner + '!!')  
+        print('Congratulations!!')
+    elif user == computer:
+        print("None of you is a winner, it's a tie!")
+        print('Better luck next time')
