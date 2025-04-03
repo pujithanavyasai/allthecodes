@@ -2,7 +2,7 @@ from random import choice as c
 valid_values=['rock', 'paper', 'scissor']
 # answers = ['computer', 'user', 'tie']
 final = []
-times = int(input("How many rounds do you want to play:- "))
+times = int(input("How many rounds do you want to play?:- "))
 computer = 0
 user = 0
 tie = 0
