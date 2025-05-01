@@ -130,3 +130,4 @@ The final list of wins: {final}''')
                         Better luck next time
 
                             ''')
+# this version doesnt have another feature play with friends which will be added soon. --01/05/2025 
