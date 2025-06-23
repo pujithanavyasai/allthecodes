@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini JS Projects</title>
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dgwd1en8f/image/upload/v1750656596/P_logo_pdmsd7.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js" defer></script>
+</head>
+
+<body>
+    <div class="counter" title="Counter">
+        <h3>Counter</h3>
+        <label id="label" title="Number">0</label>
+        <div class="btncont">
+            <button title="Decrement Button" id="decrementbtn">
+                << /button>
+                    <button title="Reset Button" id="resetbtn">reset</button>
+                    <button title="Increment Button" id="incrementbtn">></button>
+        </div>
+    </div>
+    <div class="roller" title="Roll Three Dice">
+        <button id="roller_but" title="Roll Button">Roll 3 dice's</button>
+        <div class="rollerans">
+            <label id="ans1" title="First Dice"></label>
+            <label id="ans2" title="Second Dice"></label>
+            <label id="ans3" title="Third Dice"></label>
+        </div>
+    </div>
+    <div class="guess" title="Number Guessing Game">
+        <pre>Number Guessing Game
+    between 1 to 100 </pre>
+        <div>
+            <label title="Number input" for="number_input_ngg">Guess Number</label>
+            <input title="Number input" id="number_input_ngg" type="number"><br><br>
+        </div>
+        <button id="nggbut" title="Check Guessed Number Button">Check</button>
+        <p id="ngg_result"></p>
+    </div>
+    <div class="tempetaure" title="Converting Temparatures">
+        <h3>Convert Temperature</h3>
+        <div>
+            <label for="temp_input" title="Temparature Input">Temperature</label>
+            <input id="temp_input" title="Temparature Input" type="number">
+        </div><br>
+        <div class="options_temp">
+            <input type="radio" id="toF" title="Converts from C to F" name="temp_option">
+            <label for="toF">Celsius to Farenheit</label><br>
+            <input type="radio" id="toC" title="Converts from F to C" name="temp_option">
+            <label for="toC">Farenheit to Celsius</label>
+        </div><br>
+        <button id="temp_convert" title="Convert Button">Convert</button>
+        <p id="temp_result"></p>
+    </div>
+</body>
+
+</html>

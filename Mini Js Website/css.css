@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: Verdana;
+    display: grid;
+    height: 100vh;
+    gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas:
+        "counter roller"
+        "guess tempetaure";
+}
+
+.counter {
+    grid-area: counter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    width: 50vw;
+    background-color: rgb(59, 174, 174);
+}
+
+.counter h3 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.btncont button {
+    background-color: aliceblue;
+    border-style: none;
+    width: 60px;
+    height: 40px;
+    margin: 10px;
+    box-shadow: 0px 1px 10px black;
+    transition: all, 0.5s;
+
+}
+
+.btncont button:hover {
+    background-color: rgb(179, 204, 225);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.btncont {
+
+    text-align: center;
+}
+
+#label {
+    display: block;
+    margin-top: 0px;
+    font-size: 70px;
+    text-align: center;
+    transform: translateY(-20px);
+}
+
+
+
+.rollerans label {
+
+    margin: 20px 5px 20px 5px;
+}
+
+.roller button {
+    width: 200px;
+    margin: 10px;
+    background-color: rgb(247, 137, 137);
+    border-style: none;
+    padding: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0px 1px 10px black;
+    transition: all 0.5s ease;
+}
+
+.roller button:hover {
+    background-color: rgb(243, 117, 117);
+    transform: scale(1.1);
+}
+
+.roller {
+    grid-area: roller;
+    background-color: rgb(90, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 50vw;
+
+}
+
+
+.guess {
+    grid-area: guess;
+    height: 50vh;
+    width: 50vw;
+    background-color: rgb(95, 194, 244);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.guess pre {
+    margin-bottom: 30px;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.guess button {
+    width: 200px;
+    margin: 10px;
+    background-color: rgb(98, 214, 62);
+    border-style: none;
+    padding: 10px;
+    box-shadow: 0px 1px 10px black;
+    transition: all 0.5s ease;
+}
+
+.guess button:hover {
+    background-color: rgb(114, 227, 138);
+    transform: scale(1.02);
+}
+
+
+.tempetaure {
+    grid-area: tempetaure;
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(237, 184, 244);
+}
+
+.tempetaure button {
+    width: 200px;
+    margin: 10px;
+    background-color: rgb(225, 219, 37);
+    border-style: none;
+    padding: 10px;
+    box-shadow: 0px 1px 10px black;
+    transition: all 0.5s ease;
+}
+
+.tempetaure button:hover {
+    background-color: rgb(242, 142, 60);
+    transform: scale(1.02);
+}
+
+@media all and (max-width:764px) {
+    body {
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(100px, auto);
+        grid-template-areas:
+            "counter "
+            "roller "
+            "guess "
+            "tempetaure";
+    }
+
+    .counter,
+    .roller,
+    .guess,
+    .tempetaure {
+        height: 100vh;
+        width: 95vw;
+    }
+
+}
