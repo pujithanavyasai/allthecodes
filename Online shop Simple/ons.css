@@ -1,0 +1,106 @@
+ body {
+    height: 100vh;
+    box-sizing: content-box;
+     background-color: rgb(192, 199, 204);
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: left;
+ }
+
+ h1 {
+     text-align: center;
+ }
+
+ .ons {
+     max-width: 800px;
+     margin: auto;
+     background-color: white;
+     border-radius: 5px;
+     padding: 30px;
+     padding-bottom: 60px;
+    
+ }
+
+ #buyButt {
+     margin-left: 10px;
+ }
+
+ .item {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px;
+     border-style: solid;
+     border-color: black;
+     border-width: 2px;
+     border-radius: 5px;
+
+ }
+ .buycont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 30px 60px 30px;
+    
+ }
+#sortButt{
+    margin-left: 10px;
+}
+ .paybut{
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    font-size: 18px;
+ }
+ .buyimg{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+ }
+ .topay{
+    text-align: center;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 24px;
+ }
+ .money {
+     text-align: right;
+     margin-top: 30px;
+ }
+
+ .pos {
+     position: fixed;
+     top: 10px;
+     right: 10px;
+     padding: 10px 30px;
+ }
+
+ * {
+     font-family: Verdana;
+     box-sizing: content-box;
+ }
+
+ button {
+     background-color: blue;
+     border-style: none;
+     border-radius: 5px;
+     padding: 10px 20px;
+     color: white;
+ }
+
+ button:hover {
+     background-color: rgb(2, 2, 197);
+ }
+
+ .cartCont {
+     display: flex;
+     flex-direction: column;
+     gap: 13px;
+ }
+
+ .productCont {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 13px;
+ }
