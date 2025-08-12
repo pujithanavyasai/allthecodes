@@ -14,6 +14,7 @@ const ons = document.getElementById('ons');
 const prodcont = document.getElementById('productCont');
 const cartcont = document.getElementById('cartCont');
 const actioncont = document.getElementById(`actionscont`);
+const viewcont = document.getElementById('viewCont');
 const clearbutt = document.getElementById(`clearButt`);
 const buyButt = document.getElementById(`buyButt`);
 const mycartname = document.getElementById(`mycartname`)
@@ -21,12 +22,21 @@ const total = document.createElement('div');
 
 
 let amount = 0;
-
+let productsToShow = [];
 cartcont.insertAdjacentElement("afterend", total);
 total.innerHTML = `<h2 class="money">Total Amount : ₹<span id="total">0</span></h2>`;
 actioncont.innerHTML = `<button id="clearButt" onclick="clearcart()" >Clear</button><button id="sortButt" onclick="sortCart()">Sort By Price</button><button id="buyButt" onclick="buycart()">Buy</button>`;
+// viewcont.innerHTML = `<button id="viewFullcart" onclick="viewFullcart()">View Full Cart</button><button id="viewherecart" onclick="viewHerecart()">View Cart Here</button>`;
 const cart = [];
 disp();
+// updates
+// function dispView(){
+//     if (cart.length === 0) {
+//         viewcont.style.display = "none"
+//     } else {
+//         viewcont.style.display = "block"
+//     }
+// }
 function disp() {
     if (cart.length === 0) {
         total.style.display = "none"
@@ -39,7 +49,35 @@ function disp() {
     }
 }
 const amountid = document.getElementById("total");
-products.forEach(product => {
+if (/Mobi|Android/i.test(navigator.userAgent)) {
+    // for(let i = 0;i<=5;i++){
+    //     let randomitem = Math.floor(Math.random() * products.length);
+    //     productsToShow.push(products[randomitem]);
+
+    // }
+    let count = 0;
+    cond = true;
+    let randomArrList = [];
+    while (cond) {
+        let randomitem = Math.floor(Math.random() * products.length);
+        if (count < 5) {
+            if (!randomArrList.includes(randomitem)) {
+                randomArrList.push(randomitem);
+                count++
+            }
+        } else { cond = false; }
+    }
+    randomArrList.forEach(each=>productsToShow.push(products[each]))
+    prodcont.className = "productContPhone";
+    prodcont.classList.remove("productContNotPhone")
+    prodcont.classList.add("productContPhone")
+} else {
+    productsToShow = [...products];
+    prodcont.classList.remove("productContPhone")
+    prodcont.classList.add("productContNotPhone")
+    prodcont.className = "productContNotPhone";
+}
+productsToShow.forEach(product => {
     const productdiv = document.createElement('div');
     productdiv.className = "item";
     productdiv.innerHTML = `
@@ -90,7 +128,7 @@ function renderCart(given) {
 function remove(id) {
     const index = cart.findIndex(item => item.id === id);
     if (index !== -1) {
-        notify.innerText = `Removed ${products.find(each=>each.id==id).pname} from cart`;
+        notify.innerText = `Removed ${products.find(each => each.id == id).pname} from cart`;
         cart.splice(index, 1);
         renderCart(cart);
         notify.style.display = 'block';
@@ -99,7 +137,7 @@ function remove(id) {
             notify.style.display = 'none';
             notify.style.backgroundColor = "#62eba9ff"
         }, 1000);
-        
+
     }
 }
 
@@ -137,3 +175,11 @@ function topay() {
         `
     );
 }
+// Updatesss
+// function viewFullcart(){
+//     viewcont.style.display = "none"
+//     document.getElementById('ons').innerHTML = "";
+// }
+// function viewHerecart(){
+//     viewcont.style.display = "none"
+// }

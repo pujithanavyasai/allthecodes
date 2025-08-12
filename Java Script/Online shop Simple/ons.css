@@ -1,6 +1,6 @@
  body {
-    height: 100vh;
-    box-sizing: content-box;
+     height: 100vh;
+     box-sizing: content-box;
      background-color: rgb(192, 199, 204);
      display: flex;
      align-items: center;
@@ -19,7 +19,7 @@
      border-radius: 5px;
      padding: 30px;
      padding-bottom: 60px;
-    
+
  }
 
  #buyButt {
@@ -37,33 +37,39 @@
      border-radius: 5px;
 
  }
- .buycont{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 120px 30px 60px 30px;
-    
+
+ .buycont {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     padding: 120px 30px 60px 30px;
+
  }
-#sortButt{
-    margin-left: 10px;
-}
- .paybut{
-    padding: 20px 20px 20px 20px;
-    margin-top: 20px;
-    font-size: 18px;
+
+ #sortButt {
+     margin-left: 10px;
  }
- .buyimg{
-    height: 200px;
-    width: 200px;
-    margin-bottom: 20px;
+
+ .paybut {
+     padding: 20px 20px 20px 20px;
+     margin-top: 20px;
+     font-size: 18px;
  }
- .topay{
-    text-align: center;
-    padding: 0px;
-    font-weight: bold;
-    font-size: 24px;
+
+ .buyimg {
+     height: 200px;
+     width: 200px;
+     margin-bottom: 20px;
  }
+
+ .topay {
+     text-align: center;
+     padding: 0px;
+     font-weight: bold;
+     font-size: 24px;
+ }
+
  .money {
      text-align: right;
      margin-top: 30px;
@@ -88,7 +94,13 @@
      padding: 10px 20px;
      color: white;
  }
+ .viewOnlyCont{
+    margin-top: 20px;
 
+ }
+ #viewherecart{
+    margin-left: 10px;
+ }
  button:hover {
      background-color: rgb(2, 2, 197);
  }
@@ -99,7 +111,13 @@
      gap: 13px;
  }
 
- .productCont {
+ .productContPhone {
+     display: grid;
+     grid-template-columns: 1fr ;
+     gap: 13px;
+ }
+
+ .productContNotPhone {
      display: grid;
      grid-template-columns: 1fr 1fr;
      gap: 13px;
