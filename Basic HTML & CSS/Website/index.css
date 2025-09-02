@@ -1,0 +1,218 @@
+* {
+  font-family: "Verdana";
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar span {
+  font-weight: bold;
+}
+
+.navbar p {
+  letter-spacing: 5px;
+
+}
+
+.each {
+  font-size: 20px;
+  display: inline;
+  padding: 15px;
+}
+
+.each:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+.navbar {
+
+  z-index: 1000;
+  width: 100vw;
+  padding: 30px 30px 30px 30px;
+  display: flex;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px -13px black;
+  justify-content: space-between;
+  position: fixed;
+
+}
+a{
+  text-decoration: none;
+  color: black;
+  letter-spacing: 5px;
+}
+
+.page-wrapper {
+  margin: 30px 50px;
+}
+
+.bg span {
+
+  background-color: rgba(35, 33, 33, 0.90);
+  font-weight: bold;
+  padding: 25px 30px;
+}
+
+.bg p {
+  color: rgba(255, 255, 255);
+  letter-spacing: 2px;
+  font-size: 50px;
+
+}
+
+.bg {
+  background-image: url(https://www.w3schools.com/w3images/architect.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.projects {
+  margin-bottom: 50px;
+}
+
+.p {
+  font-size: 30px;
+  margin: 50px 0px 30px 0px;
+}
+
+.hr {
+  border-color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.productEach {
+  position: relative;
+}
+
+.productEach img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.productEach p {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  padding: 15px 24px;
+  margin: 0;
+}
+
+.aboutGrid {
+  margin: 35px 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/*
+.about :nth-child(3){
+  font-size: 22px;
+  margin-bottom: 30px;
+} */
+
+.aboutCard img {
+  filter: grayscale(80%);
+  width: 100%;
+}
+
+.aboutCard-name {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.aboutCard-occ {
+  font-size: 15px;
+  margin: 10px 0px;
+  color: rgb(161, 156, 156);
+}
+
+.aboutCard button {
+  font-size: 20px;
+  border: 0px none;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0px;
+  background-color: rgb(236, 235, 235);
+  padding: 15px;
+}
+
+.aboutCard button:hover {
+
+  background-color: rgb(202, 202, 202);
+}
+
+
+
+.contact :nth-child(3) {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.form-field {
+  border: 1px solid rgb(206, 197, 197);
+  padding: 15px 10px;
+  font-size: 20px;
+  margin: 10px 0px;
+  width: 99%;
+}
+
+.form button {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 20px 30px;
+  margin: 10px 0px
+}
+
+.form button:hover {
+  background-color: rgb(217, 215, 215);
+  border: none;
+  padding: 22px 30px;
+  color: black;
+}
+
+.mapImg img {
+  margin: 30px 0px;
+  width: 100%;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 55px;
+  font-size: 20px;
+}
+
+.footer span {
+  font-family: Verdana;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.page-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+
+#projects, #about, #contact {
+  scroll-margin-top: 100px;
+}
