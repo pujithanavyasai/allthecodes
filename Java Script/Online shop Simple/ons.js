@@ -146,7 +146,7 @@ function clearcart() {
     renderCart(cart);
 }
 function sortCart() {
-    cart.sort((a, b) => a.pprice - b.pprice)
+    cart.sort((a, b) => b.pprice - a.pprice)
     renderCart(cart);
 }
 function buycart() {
