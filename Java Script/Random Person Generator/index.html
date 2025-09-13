@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Random Profile Card Generator</title>
-    <link rel="icon" href="logo.svg">
-    <link rel="stylesheet" href="css.css">
+    <link rel="icon" href="logo.svg" />
+    <link rel="stylesheet" href="css.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
-
 <body>
     <button class="getRandom" id="getRandom">Generate Random Person</button>
     <div class="cardCont">
-        <p class="generateRequest" id="generateRequest">Please click the Generate button to see the results! </p>
+        <p class="generateRequest" id="generateRequest">Please click the Generate button to see the results!</p>
         <div class="card skeletonCont" id="skeletonCont">
             <div class="upper">
-                <div class="skel photo"></div>
+                <div class="photo skel"></div>
                 <div class="pCont">
                     <div class="skel p"></div>
                     <div class="skel p p2"></div>
@@ -34,14 +31,12 @@
                 <div class="skel p p4"></div>
             </div>
         </div>
-        <div class="card realCont w-[100%]" id="realCont">
+        <div class="card realCont" id="realCont">
             <div id="upper" class="upper"></div>
             <div id="mid" class="mid"></div>
             <div id="lower" class="lower"></div>
         </div>
     </div>
-    </div>
     <script src="js.js"></script>
 </body>
-
 </html>
