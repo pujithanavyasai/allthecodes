@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        roboto: ["Roboto"]
+                    },
+                },
+            }
+        };
+    </script>
+    
+</head>
+
+<body>
+    <div class="w-[90%] m-auto pt-20">
+        <div class="flex flex-col items-center">
+            <h1 class="w-full text-center text-[28px] font-bold text-[#3e4c59] font-[roboto]">
+                Find the Population of a Country
+            </h1>
+
+            <div class="w-full text-center mt-12">
+                <input id="searchInput" type="search" placeholder="Search for a Country" class="w-full h-[50px] p-4 border border-gray-300 rounded focus:outline-none focus:border-blue-500" />
+            </div>
+
+            <div class="hidden mt-20 w-full" id="spinner">
+                <div class="flex justify-center">
+                    <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="resultCountries" class=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[10px] mt-[18px]"></div>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>

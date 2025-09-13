@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cook Book 🥘</title>
+    <link rel="icon" href="logo.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/42690c4968.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div id="navInput" class="navInput flex flex-col sm:flex-row gap-3 ">
+        <input type="search" placeholder="Search here for the recipe" class="input p-[10px] pl-[20px] sm:p-[20px] "
+            id="input" />
+        <button class="searchBut" id="searchBut" type="button">Get the Recipe</button>
+    </div>
+    <div class="main relative flex flex-col items-center justify-center h-auto" id="main">
+        <div id="loader" class="loader translate-y-[350px]"></div>
+        <div class="beforeSearch  flex flex-col items-center m-[50px]" id="beforeSearch">
+            <p id="bsP" class="p-[100px] rounded-lg w-[80%]  text-center bg-[#fff4e1]">Search above to get the food that you want to cook</p>
+        </div>
+        <div id="aftetSearch" class=" w-[100%] relative flex flex-col items-center justify-center h-auto"></div>
+    </div>
+        <script src="js.js"></script>
+</body>
+
+</html>
