@@ -153,15 +153,16 @@ body {
     transform: scale(1.02);
 }
 
+
 @media all and (max-width:764px) {
     body {
         gap: 10px;
         grid-template-columns: 1fr;
-        grid-template-rows: minmax(100px, auto);
+        grid-template-rows: repeat(4, 75vh); 
         grid-template-areas:
-            "counter "
-            "roller "
-            "guess "
+            "counter"
+            "roller"
+            "guess"
             "tempetaure";
     }
 
@@ -169,8 +170,7 @@ body {
     .roller,
     .guess,
     .tempetaure {
-        height: 100vh;
-        width: 95vw;
+        height: 75vh;  
+        width: 100%;
     }
-
 }
